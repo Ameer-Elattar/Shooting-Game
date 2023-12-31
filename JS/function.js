@@ -89,7 +89,7 @@ class Bullet{
         #intervalEnd;
         #score;
         constructor(){
-            this.gameGun=new Gun(`../images/2.png`,elementCountiner);
+            this.gameGun=new Gun(`images/2.png`,elementCountiner);
             
             this.gameGun.movingWithArrows();
             
