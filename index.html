@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div class="card">
+        <form action="./game.html" method="get">
+            <div class="input">
+                <label for="uName">Player Name: </label>
+                <input type="text" id="uName" placeholder="Enter Your Name" name="user" autocomplete="off" maxlength="25">
+                <p>Pls Enter a  Name To Play Or Select Level</p>
+            </div>
+            <div class="level">
+                <label for="easy">Easy</label>
+                <input type="radio" name="level" value="1" id="easy">
+                <label for="hard">Hard</label>
+                <input type="radio" name="level" value="2" id="hard">
+            </div>
+            <input type="submit" value="Press To Enter the Game">
+            
+        </form>
+        <script src="../JS/function.js"></script>
+        <script src="../JS/HomePage.js" ></script>
+    </div>
+</body>
+</html>

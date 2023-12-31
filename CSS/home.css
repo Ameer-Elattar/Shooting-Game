@@ -1,0 +1,59 @@
+body{
+    background-image: url(../images/19333449.jpg);
+    background-size: cover;
+}
+.card{
+    background-color: #53748b;
+    width: 400px;
+    height: 300px;
+    margin: 150px auto;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 13px 13px 7px;
+}
+.input{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: white;
+}
+input[type=text]{
+    border: none;
+    outline: none;
+    padding: 3px;
+    margin-left: 5px;
+    border-radius: 5px;
+    
+}
+p{
+    position: relative;
+    left: 10px;
+    color: red;
+    visibility: hidden;
+    font-weight: bold;
+}
+.level{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-weight: bold;
+}
+.level label[for="hard"]{
+    margin-left: 30px;
+    color:rgb(87, 2, 2);
+}
+.level label[for="easy"]{
+    color: rgb(65, 204, 65);
+}
+input[type=submit]{
+    position: absolute;
+    bottom: 20%;
+    left: 130px;
+    background-color: rgb(4, 63, 71);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
