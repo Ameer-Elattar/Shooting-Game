@@ -175,7 +175,6 @@ class Bullet
                         this.gameBullets[this.gameBulletsSeterCount].moving();
                         this.gameBullets[this.gameBulletsSeterCount].check(this); 
                         this.gameBulletsSeterCount++;
-                       
                         if(this.gameBulletsSeterCount==30){
                             this.gameBulletsSeterCount=0;
                         }
@@ -197,7 +196,6 @@ class Bullet
                         this.gameBullets[this.gameBulletsSeterCount].moving();
                         this.gameBullets[this.gameBulletsSeterCount].check(this); 
                         this.gameBulletsSeterCount++;
-                       
                         if(this.gameBulletsSeterCount==30){
                             this.gameBulletsSeterCount=0;
                         }
@@ -206,7 +204,6 @@ class Bullet
                         
                 }
                 else if(keysPressed[" "]){
-                   
                         if(this.gameBulletsCount<30){
                         this.gameBullets[this.gameBulletsCount]=new Bullet(gameCountiner,this.gameGun) ;
                         this.gameBullets[this.gameBulletsCount].moving();
@@ -218,14 +215,12 @@ class Bullet
                         this.gameBullets[this.gameBulletsSeterCount].moving();
                         this.gameBullets[this.gameBulletsSeterCount].check(this); 
                         this.gameBulletsSeterCount++;
-                       
                         if(this.gameBulletsSeterCount==30){
                             this.gameBulletsSeterCount=0;
                         }
             
                     }
                         
-                         
                 }
                 if(keysPressed["ArrowRight"]&& parseInt( this.gameGun.gunImg.style.left)<=(document.body.clientWidth-this.gameGun.gunImg.width-5))
                 {

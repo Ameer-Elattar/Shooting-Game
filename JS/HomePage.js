@@ -1,24 +1,23 @@
-
+let userNameInput=document.querySelector("#uName");
 let submitKey=document.querySelector("input[type=submit]");
 let messageWarn=document.querySelector("p");
 let radioBox=document.querySelectorAll("input[type=radio]")
 let localStorageRecord ={};
 
-submitKey.addEventListener("click",function(event)
+submitKey.addEventListener("click",function(event,userInput,Warn,radioBoxCheck)
 {
-    let userNameInput=document.querySelector("#uName");
-    if(userNameInput.value==""||!(radioBox[0].checked || radioBox[1].checked))
+    if(userInput.value==""||!(radioBoxCheck[0].checked || radioBoxCheck[1].checked))
     {
         event.preventDefault();
-        messageWarn.style.visibility="visible";
+        Warn.style.visibility="visible";
     }
    
     else{
-        messageWarn.style.visibility="hidden";
-         if(!(CheckLocal(userNameInput.value)))
+        Warn.style.visibility="hidden";
+         if(!(CheckLocal(userInput.value)))
             {
                 
-                localStorageRecord.playername=userNameInput.value;
+                localStorageRecord.playername=userInput.value;
                 console.log(localStorageRecord.playername)
                 window.localStorage.setItem(`Player${localStorage.length +1}`,JSON.stringify(localStorageRecord));
             }

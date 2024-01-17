@@ -9,7 +9,7 @@ gameCountiner.appendChild(gameinfo);
 let score=0;
  
 for(let i=0; i<localStorage.length;i++){
-    if(localStorage.key(i).slice(0,6) != 'Player' ){
+    if(localStorage.key(i).slice(0,6) != 'Player'){
         continue;
     }
     if(JSON.parse(localStorage.getItem(localStorage.key(i))).playername==userNameValue){
