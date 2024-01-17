@@ -87,7 +87,6 @@ class Bullet
                 this.checkIntervalEnd =false;  
                 }
             },1);
-                       
         }
 } 
     class Gun
@@ -233,15 +232,13 @@ class Bullet
                     this.gameGun.gunImg.style.left=( parseInt(  this.gameGun.gunImg.style.left)- 20)+"px";
                 }
             
-             
             
-                 });
-                 document.addEventListener('keyup', (event) => {
+                });
+                document.addEventListener('keyup', (event) => {
                     keysPressed[event.key] = false
-                 });
+                });
                 
                 
-             
             }
         
     
@@ -255,7 +252,6 @@ class Bullet
         {
             let id=setInterval(() => 
             {
-                 
                 let counter=this.arrOfBlocks.length-1;
                 let flag=0;
                 this.gameBlocks.blokcsCountinr.style.paddingTop=parseInt(this.gameBlocks.blokcsCountinr.style.paddingTop)+3+"px";
