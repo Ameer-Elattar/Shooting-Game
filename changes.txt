@@ -1,0 +1,11 @@
+"We have adjusted the bullet speed and modified the number of bullets to allow the user to shoot more than one bullet at a time by creating 30 objects from the Bullet class and sroting them in an array for reuseing them during gameplay. This means that there are 30 bullets available for reuse during the game instead of just one.
+
+We also adjusted the number of boxes, requiring the user to destroy 300 boxes to win the game. We implemented this by reusing destroyed box rows so that when the user destroys a row of boxes, we reuse that row by prepend it in order to avoid generating new boxes.
+
+If the user fails to destroy the boxes, the game will continue generating new boxes until the screen is full, resulting in the user losing the game.
+
+We replaced the movement with setTimeout with css transition instead of setInterval to reduce the code operations significantly , however, this means that if a bullet is fired before generating or a new row or prepend one, it -bullet - won't be able to destroy any box in that row.
+We modified the two variables you mentioned.
+and about send the css selector to the input or the reference of the array instead of selecting it inside the function  it is not possible to do it in game constructor because there is no elements to  select and bass befour create new Game object and it would throw an error so we do send the css selector to the input of moveBlocks function and saved it as a property  to avoid doing  selection  inside the constructor 
+we found a function that relies on a global variable on the homepage.js . and we have made the necessary adjustments
+We hope we have understood the modifications correctly and have applied them appropriately."
