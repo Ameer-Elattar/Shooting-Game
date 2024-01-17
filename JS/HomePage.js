@@ -2,12 +2,15 @@ let playerName=document.querySelector("#uName");
 let submitKey=document.querySelector("input[type=submit]");
 let messageWarn=document.querySelector("p");
 let radioBox=document.querySelectorAll("input[type=radio]")
-let localStorageRecord;
-localStorageRecord={
+let test;
+test={
     name:""
 }
-localStorage.setItem("PlayerTest",JSON.stringify(localStorageRecord));
+localStorage.setItem("PlayerTest",JSON.stringify(test));
 submitKey.addEventListener("click",function(event){
+    let localStorageRecord={
+    name:""
+    };
     if(playerName.value==""){
         event.preventDefault();
         messageWarn.style.visibility="visible";
